@@ -1,36 +1,31 @@
 # HEA
+The HEA is a hybrid evolutionary algorithm developed to solve the problem of task scheduling and data allocation in scientific workflows.
 
-O HEA é um algoritmo evolutivo híbrido  desenvolvido para solucionar o problema do escalonamento de tarefas e alocações de dados de workflows científicos.
+## Installation
+To run the algorithm, it is necessary to install the dependencies. This task can be easily performed using the install.sh script available in the HEA/setup/ folder.
 
-## Instalação
+To compile the project, use the compile.sh file.
 
-Para executar o algoritmo é necessário instalar as dependências. Essa tarefa é facilmente executada utilizando o script [install.sh](https://github.com/luanteylo/HEA/blob/master/setup/install.sh) disponível na pasta **HEA/setup/**.
+## Input Files
+The input files can be found in the HEA/input folder.
 
-Para compilar o projeto utilize o arquivo [compile.sh](https://github.com/luanteylo/HEA/blob/master/compile.sh) 
+## Execution
 
-## Arquivos de Entrada
+The executable file is located in the bin/ directory.
 
-Os arquivos de entrada podem ser encontrados na pasta **HEA/input**
+```
+cd HEA/bin
 
-## Execução
+./HEA -c ../input/cluster.vcl -w ../input/miniworkflow.dag  -v
+```
 
-O arquivo executável se encontra na basta **bin/**
-
-`cd HEA/bin`
-
-`./HEA -c ../input/cluster.vcl -w ../input/miniworkflow.dag  -v`
-
-A entrada é composta por dois arquivos: 
-
-* O arquivo *.vcl* descreve o ambiente de execução e os recursos computacionais de cada máquina deste ambiente.
-
-* O arquivo *.dag* descreve o workflow que deverá ser escalonado.
-
+* The .vcl file describes the execution environment and the computational resources of each machine in this environment.
+* The .dag file describes the workflow that should be scheduled.
 
 ## Versioning
-
-versão 1.0 - 2016.
+Version 1.0 - 2016.
 
 ## Author
 
 * **Luan Teylo**  
+
